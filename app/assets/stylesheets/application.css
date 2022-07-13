@@ -1,7 +1,7 @@
 
 
 .top_page {
-  background-color: aliceblue;
+  background-color: azure;
   display: block;
   height: 100vh;
   width: 100vw;
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  height: calc(100% - 80%);
 }
 
 .title {
@@ -27,6 +28,21 @@
   width: calc(100% - 60%);
   padding-left: 200px;
   letter-spacing: 10px;
+}
+
+
+
+.center_bar {
+  background-color: azure;
+  height: calc(100% - 20%);
+  width: 100%;
+}
+
+.main {
+  background-color: beige;
+  margin: 30px;
+  width: 30%;
+  height: 60%;
 }
 
 
