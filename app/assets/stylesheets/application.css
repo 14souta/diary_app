@@ -32,10 +32,14 @@
 
 
 
+
+
+
 .center_bar {
   background-color: azure;
   height: calc(100% - 20%);
   width: 100%;
+  overflow: scroll;
 }
 
 .main {
@@ -43,6 +47,37 @@
   margin: 30px;
   width: 30%;
   height: 60%;
+}
+
+
+
+
+
+.post {
+  background-color: beige;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.diary_post {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.form_connection {
+  padding: 20px;
+}
+
+.link_connection {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 

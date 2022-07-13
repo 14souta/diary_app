@@ -1,0 +1,20 @@
+<div class = "post">
+  <div class = diary_post>
+    <%= form_with  do |f| %>
+    <div class = form_connection>
+      <p>
+        クリックしてファイルをアップロード
+      </p>
+    <%= f.file_field :image %>
+    </div>
+    <div class = form_connection>
+    <%= %>
+      <%= f.text_area :explanation, placeholder:"テキスト", size: "50x10" %>
+    </div>
+    <div class = link_connection>
+      <%= f.submit "送信"%>
+      <%= link_to  "戻る", root_path %>
+    </div>
+    <% end %>
+  </div>
+</div>
