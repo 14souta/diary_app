@@ -7,7 +7,7 @@
 | nickname           | string | null: false |
 | email              | string | null: false |
 | encrypted_password | string | null: false |
-| introduction       | string | null: false |
+| introduction       | text   | null: false |
 
 ## アソシエーション
 
