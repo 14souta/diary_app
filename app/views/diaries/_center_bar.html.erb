@@ -1,5 +1,7 @@
 <div class = "center_bar">
+<% @diaries.each do |diary|%>
   <div class = main >
-
+    <%= image_tag diary.image, class: "diary_img" %>
   </div>
+  <% end %>
 </div>
