@@ -1,0 +1,17 @@
+<div class = diary_show>
+  <div class = diary_block>
+    <div class = diary_image>
+      <%=  image_tag @diary.image, class: "show_image" %>
+    </div>
+    <div class = diary_explanation>
+      <%= @diary.explanation%>
+    </div>
+    <div class = btn>
+      <%= link_to "編集"%>
+      <%= link_to "削除"%>
+    </div>
+    <div class = back>
+      <%= link_to "戻る", root_path %>
+    </div>
+  </div>
+</div>
