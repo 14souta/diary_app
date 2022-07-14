@@ -33,8 +33,6 @@
 
 
 
-
-
 .center_bar {
   background-color: azure;
   height: calc(100% - 20%);
@@ -51,6 +49,10 @@
   height: 60%;
 }
 
+.diary_img {
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -84,12 +86,46 @@
 
 
 
-
-.diary_img {
-  width: 100%;
-  height: 100%;
+.diary_show {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
+.diary_block {
+background-color: lightyellow;
+height: 500px;
+width: 500px;
+}
 
+.diary_image {
+  height: 100%;
+  width: 100%;
+}
 
+.show_image {
+  height: 100%;
+  width: 100%;
+}
 
+.diary_explanation {
+  font-size: 40px;
+  padding:30px;
+  width:100%;
+  height:auto;
+}
+
+.btn {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding:30px;
+}
+
+.back {
+font-size: 20px;
+display: flex;
+justify-content: center;
+}
