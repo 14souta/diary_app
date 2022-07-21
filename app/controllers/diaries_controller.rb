@@ -16,6 +16,17 @@ class DiariesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    if @diary = Diary.update(diary_params)
+      render :show
+    else
+      render :edit
+    end
+  end
+
   def show
     @diary = Diary.find(params[:id])
   end
