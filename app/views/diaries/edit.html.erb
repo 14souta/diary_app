@@ -1,6 +1,6 @@
 <div class = "post">
   <div class = diary_post>
-    <%= form_with  do |f| %>
+    <%= form_with model: @diary, local: true do |f| %>
     <div class = form_connection>
       <p>
         クリックしてファイルをアップロード
@@ -14,7 +14,7 @@
     <div class = link_connection>
       <%= f.submit "更新"%>
       <%= link_to "削除" %>
-      <%= link_to "戻る", root_path %>
+      <%= link_to "戻る", diary_path(@diary.id) %>
     </div>
     <% end %>
   </div>
