@@ -34,8 +34,11 @@ before_action :diary_date, only: [:show, :edit, :update, :destroy]
   end
 
   def destroy
-    @diary.destroy
-    redirect_to root_path
+    if @diary.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
   end
 
   private
