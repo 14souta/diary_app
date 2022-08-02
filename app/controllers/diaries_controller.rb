@@ -1,6 +1,6 @@
 class DiariesController < ApplicationController
 
-before_action :diary_date, only: [:show, :edit, :update]
+before_action :diary_date, only: [:show, :edit, :update, :destroy]
 
   def index
     @diaries = Diary.all
@@ -31,6 +31,14 @@ before_action :diary_date, only: [:show, :edit, :update]
   end
 
   def show
+  end
+
+  def destroy
+    if @diary.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
   end
 
   private
