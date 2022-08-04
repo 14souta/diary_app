@@ -6,10 +6,12 @@
     <div class = diary_explanation>
       <%= @diary.explanation%>
     </div>
-    <div class = btn>
-      <%= link_to "編集", edit_diary_path %>
-      <%= link_to "削除", diary_path, method: :delete %>
-    </div>
+    <% if user_signed_in? %>
+      <div class = btn>
+        <%= link_to "編集", edit_diary_path %>
+        <%= link_to "削除", diary_path, method: :delete %>
+      </div>
+    <% end %>
     <div class = back>
       <%= link_to "戻る", root_path %>
     </div>
