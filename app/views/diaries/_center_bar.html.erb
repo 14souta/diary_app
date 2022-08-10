@@ -2,7 +2,7 @@
 <% @diaries.each do |diary|%>
   <div class = main >
     <%= link_to diary_path(diary.id) do %>
-    <%= image_tag diary.image, class: "diary_img" %>
+      <%= image_tag diary.image, class: "diary_img" %>
     <% end %>
   </div>
 <% end %>
