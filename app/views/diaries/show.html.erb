@@ -6,6 +6,7 @@
     <div class = diary_explanation>
       <%= @diary.explanation%>
     </div>
+      <div>投稿者.<%= @diary.user.nickname %></div>
     <% if user_signed_in? %>
       <div class = btn>
         <%= link_to "編集", edit_diary_path %>
