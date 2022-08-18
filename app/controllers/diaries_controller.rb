@@ -44,7 +44,7 @@ before_action :diary_date, only: [:show, :edit, :update, :destroy]
   private
 
   def diary_params
-    params.require(:diary).permit(:image, :explanation)
+    params.require(:diary).permit(:image, :explanation).merge(user_id: current_user.id)
   end
 
   def diary_date

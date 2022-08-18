@@ -1,7 +1,16 @@
 <div class = top_bar >
   <div class = title >Diary app</div>
-  <div class = logout >
-    <%= link_to "ログアウト" %>
-    <%= link_to "投稿", new_diary_path %>
-  </div>
+  <% if user_signed_in? %>
+    <div class = logout >
+        <div class = menu > ようこそ<%= link_to "#{current_user.nickname}" %>さん</div>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <%= link_to "投稿", new_diary_path %>
+    </div>
+  <% else %>
+    <div class = logout >
+      <%= link_to "ログイン", new_user_session_path %>
+      <%= link_to "新規登録", new_user_registration_path %>
+    </div>
+  <% end %>
+
 </div>
